@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    color: white;
+    padding-top: 2em;
+    padding-left: 3em;
+}
+
+.ul :hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.first h2 {
+    color: black;
+}
+
+.sliderContainer {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider img {
+    height: 80vh;
+    width: auto;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+/* .add{
+    padding-top: 2em;
+}
+.browse {
+    padding-left: 95em;
+} */
+
+.grid img {
+    height: 320px;
+    width: 320px;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.third h5 {
+    color: black;
+}
+
+.grid1 img {
+    height: 320px;
+    width: 320px;
+}
+
+.grid1 {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.fourth {
+    background-color: rgb(209, 169, 169);
+    padding: 15px;
+    height: 75vh;
+}
+
+.fourth h1 {
+    text-align: center;
+}
+
+.fourth p {
+    text-align: center;
+    padding-top: 17px;
+}
+
+.fourth h2 {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.foot img :hover {
+    transform: scale(1.5, 1.5);
+}
+
+.foot img {
+    padding-top: 15px;
+    height: 150px;
+    width: 150px;
+    animation: scale 3s ease-in;
+    position: relative;
+
+}
+
+@keyframes scale{
+    0%{
+opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.foot {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.foot i {
+    padding-top: 5em;
+}
+
+.icons {
+    padding-top: 2em;
+    padding-left: 40em;
+}
+
+.end p{
+    padding-top: 2em;
+    text-align: center;
+}
