@@ -24,6 +24,52 @@ a {
     color: black;
 }
 
+.search{
+    position: relative;
+    margin-top: -2em;
+    margin-left: 60em;
+}
+
+input{
+    width: 20px;
+    height: 40px;
+    padding: 1em;
+    border: none;
+    transition: width 0.3s ease;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.btn {
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 10px;
+    height: 40px;
+    padding-left: -3.3em;
+    border: none;
+    cursor: pointer;
+    transition: width 0.3s ease;
+    background-color: transparent;
+}
+
+.search.active input {
+    width: 250px;
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.search.active button {
+    transform: translateX(250px);
+}
+
 .first h2 {
     color: black;
 }
@@ -62,14 +108,7 @@ a {
     cursor: pointer;
 }
 
-/* .add{
-    padding-top: 2em;
-}
-.browse {
-    padding-left: 95em;
-} */
-
-.grid img {
+.grid-item img {
     height: 320px;
     width: 320px;
 }
@@ -81,21 +120,16 @@ a {
     padding: 10px;
 }
 
-.third h5 {
-    color: black;
+.grid-item p {
+    padding: 1em 0em;
+    line-height: 0.5em;
 }
 
-.grid1 img {
-    height: 320px;
-    width: 320px;
+#browse{
+    padding-left: 77em;
+    margin-top: -1em;
 }
 
-.grid1 {
-    display: grid;
-    grid-row-gap: 15px;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-}
 
 .fourth {
     background-color: rgb(209, 169, 169);
@@ -112,32 +146,29 @@ a {
     padding-top: 17px;
 }
 
-.fourth h2 {
+#continue{
+    text-decoration: rgb(153, 86, 86) underline;
+    text-underline-position: under;
+    padding: 1em 0em;
+}
+
+.ig {
     text-align: center;
     padding-top: 5em;
 }
 
-.foot img :hover {
-    transform: scale(1.5, 1.5);
+.foot img:hover {
+    transform: scale(1.5);
 }
 
 .foot img {
     padding-top: 15px;
     height: 150px;
     width: 150px;
-    animation: scale 3s ease-in;
-    position: relative;
+    transition: transform .3s;
 
 }
 
-@keyframes scale{
-    0%{
-opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 .foot {
     display: flex;

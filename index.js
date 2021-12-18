@@ -5,6 +5,11 @@ const images = document.querySelectorAll('.slider img');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn =  document.querySelector('#nextBtn');
 
+//input
+const search = document.querySelector(".search");
+const btn = document.querySelector("button");
+const input = document.querySelector("input");
+
 //counter
 let counter = 1;
 const size = images[0].clientWidth;
@@ -39,3 +44,10 @@ prevBtn.addEventListener('click',() => {
     }
  }); 
 
+ btn.addEventListener("click", () => {
+    search.classList.toggle("active");
+    input.focus();
+    input.value = ""
+    btn.style.color = '#fff';
+    
+  });
